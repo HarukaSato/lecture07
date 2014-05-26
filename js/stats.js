@@ -38,8 +38,10 @@ var calcMean = function(){
 
     if(n > 0){
         outputMean.textContent = sum / n;
-    } else if {n != number
-           showError();
+    } else{
+           showError("数字を入れてね！");
+
+
 
     }
 };
