@@ -38,8 +38,25 @@ var calcMean = function(){
 
     if(n > 0){
         outputMean.textContent = sum / n;
+    } else if {n != number
+           showError();
+
     }
 };
+
+var calcMax = function(){
+    var index = 0;
+    var max = Number.MIN_VALUE;
+
+    while(index < inputElements.length){
+        var input = inputElements[index]
+        var number = Number(input.value)
+        if(!Number.isNaN(number) && number > max){
+            max = number;
+        }
+    }
+    index = index + 1;
+ }   
 
 var calcStats = function(){
     calcMean();
