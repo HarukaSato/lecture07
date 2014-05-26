@@ -39,7 +39,8 @@ var calcMean = function(){
     if(n > 0){
         outputMean.textContent = sum / n;
     } else{
-           showError("数字を入れてね！");
+           showError();
+           document.write("数字を入れてね！");
 
 
 
