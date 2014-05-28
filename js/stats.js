@@ -26,6 +26,13 @@ var calcMean = function(){
     var sum = 0;
     var n = 0;
 
+if(n > 0){
+        outputMean.textContent = sum / n;
+    } 
+    else{
+           showError("計算出来ないよ〜！");
+        }
+
     while(index < inputElements.length){
         var input = inputElements[index];
         var number = Number(input.value);
@@ -34,16 +41,7 @@ var calcMean = function(){
             n = n + 1;
         }
         index = index + 1;
-    }
-
-    if(n > 0){
-        outputMean.textContent = sum / n;
-    } else{
-           showError();
-           document.write("数字を入れてね！");
-
-
-
+    
     }
 };
 
